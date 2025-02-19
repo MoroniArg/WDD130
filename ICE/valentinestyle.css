@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+#wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+#valentines-title {
+    text-align: center;
+}
+body {
+    background-color: pink; 
+    font-family: 'roboto condensed';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#cupid-img {
+    width: 100%;
+}
