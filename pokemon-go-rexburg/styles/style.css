@@ -261,6 +261,30 @@ nav a:hover {
     color: #072d6b;
 }
 
+
+.nav-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  .previous, .next {
+    background-color: #072d6b;
+    color: white;
+    padding: 12px 20px;
+    margin: 0 10px;
+  }
+
+  a:hover {
+    background-color: #072d6b;
+    color: white;
+  }
+
 footer {
     background-color: #0B4DA2;
     color: white;
