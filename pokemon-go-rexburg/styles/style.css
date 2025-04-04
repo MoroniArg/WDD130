@@ -55,7 +55,7 @@ nav a:hover {
 
 .hero {
     display: grid;
-    grid-template: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     width: 100%;
 }
 
