@@ -280,11 +280,6 @@ a {
     margin: 0 10px;
   }
 
-  a:hover {
-    background-color: #072d6b;
-    color: white;
-  }
-
 footer {
     background-color: #0B4DA2;
     color: white;
@@ -338,6 +333,140 @@ footer a:hover {
 }
 
 
+/* This is the CSS for the child page "About Us" */
 
+.about-us-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
 
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 40px 20px;
+}
 
+.hero h1 {
+    grid-column: 2/3;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 10px 1fr 1fr 10px 1fr 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+
+.featured .card:nth-child(1) {
+    grid-column: 2/4; 
+}
+
+.featured .card:nth-child(2) {
+    grid-column: 5/7; 
+}
+
+.featured .card:nth-child(3) {
+    grid-column: 8/10; 
+}
+
+.featured .card:nth-child(4) {
+    grid-column: 3/6; 
+}
+
+.featured .card:nth-child(5) {
+    grid-column: 6/9; 
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cta {
+    text-align: center;
+    background-color: #072d6b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cta input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #007bffa3;
+    color: white;
+  }
+
+  #Comm-communication {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.Discord-info, .Campfire-info {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.Discord-info h3, .Campfire-info h3 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.Discord-info p, .Campfire-info p {
+    font-size: 25px;
+}
+
+.goals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.goals h3 {
+    font-size: 25px;
+}
+
+.goals p {
+    font-size: 20px;
+}
