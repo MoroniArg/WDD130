@@ -19,8 +19,8 @@
             </nav>
         </header>
         <main class="community-grid">
-            <section class="hero">
-                <div class="hero-content">
+            <section class="comm-hero">
+                <div class="comm-hero-content">
                     <img src="images/Community-1.jpg" alt="Hero Image">
                     <div class="overlay-content">
                         <p>Pokemon Go - Rexburg</p>
@@ -54,23 +54,113 @@
                     <p>Join our Pokémon GO Rexburg Campfire group to find local raids, coordinate meetups, and connect with fellow trainers—let’s explore together!</p>
                 </div>
             </section>
-        
-            <section class="gallery">
-                <div class="large-image">
-                    <img src="images/Event-2.jpg" alt="Community Gathering">
+
+            <!-- This is from W3Schools. I did some modifications, but it mainly comes from W3Schools-->
+
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                    <img src="images/Event-1.jpg">
                 </div>
-                <div class="small-images">
-                    <img src="images/Community-3.jpg" alt="Gallery Image 1">
-                    <img src="images/Rexburg-1.jpg" alt="Gallery Image 2">
+            
+                <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                    <img src="images/Event-2.jpg">
                 </div>
-                <div class="large-image-2">
-                    <img src="images/Event-1.jpg" alt="Community Gathering">
+            
+                <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                    <img src="images/Rexburg-1.jpg">
                 </div>
-            </section>
+            
+                <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                    <img src="images/community-2.jpg">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                    <img src="images/community-3.jpg">
+                </div>
+            
+                <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                    <img src="images/Community-1.jpg">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="comm-prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="comm-next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/Event-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="G-Max Kanto Starters">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Event-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Raid Hour">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Rexburg-1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Go Fest">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/community-2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Primal Groudon Raid Day">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/community-3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Community Day">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Community-1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Raid Hour">
+                </div>
+                </div>
+            </div>
+
             <div class="nav-buttons">
                 <a href="index.html" class="previous round">&#8249;</a>
                 <a href="about-us.html" class="previous">&laquo; Previous</a>
             </div>
+
+            <script>
+                let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
         </main>
         
         <footer>
