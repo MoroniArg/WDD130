@@ -489,7 +489,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Hero Section */
+
 .comm-hero {
     position: relative;
     width: 100%;
@@ -515,7 +515,7 @@ body {
     border-radius: 10px;
 }
 
-.overlay-content p {
+.overlay-content h1 {
     font-size: 35px;
     margin-bottom: 10px;
 }
