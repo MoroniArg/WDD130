@@ -76,39 +76,39 @@ nav a:hover {
     grid-column: 1 / -1; 
     grid-row: 3/10;
     position: absolute; 
-    top: 45%; /* Move it down */
-    left: 10%; /* Move it to the left */
-    width: 40%; /* Control the width to prevent stretching */
+    top: 45%; 
+    left: 10%;
+    width: 40%; 
     color: black;
     text-align: left;
     z-index: 1;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 15px; 
 }
 
 #hero-msg h1 {
-    font-size: 50px;  /* Adjust this value to make the heading bigger */
+    font-size: 50px;
     font-weight: bold;
 }
 
 #hero-msg p {
-    font-size: 18px;  /* Adjust this value to make the paragraph text bigger */
-    line-height: 1.6;   /* Optional: To improve readability */
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 #buttons {
     grid-column: 1 / -1; 
     grid-row: 3/10;
     position: absolute; 
-    top: 110%; /* Move it down */
-    left: 5%; /* Move it to the left */
-    width: 40%; /* Control the width to prevent stretching */
+    top: 110%;
+    left: 5%; 
+    width: 40%; 
     color: black;
     text-align: left;
     z-index: 1;
-    display: flex;  /* Use flexbox to align buttons next to each other */
-    justify-content: space-evenly;  /* Add space between buttons */
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #buttons a {
@@ -278,6 +278,12 @@ a {
     color: white;
     padding: 12px 20px;
     margin: 0 10px;
+}
+
+#footer_logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 footer {
@@ -528,7 +534,7 @@ body {
     color: black;
 }
 
-/* Featured Content */
+
 .featured-content {
     display: flex;
     align-items: center;
@@ -556,7 +562,7 @@ body {
 }
 
 
-/* Image Gallery */
+
 .container {
     max-width: 1000px;
     position: relative;
@@ -598,7 +604,7 @@ body {
     color: #333;
 }
 
-/* Thumbnails */
+
 .row {
     display: flex;
     justify-content: center;
